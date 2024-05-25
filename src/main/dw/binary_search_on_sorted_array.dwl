@@ -36,4 +36,4 @@ fun binary_search(array,target,left,right) =
 
 ---
 
-binary_search(input_array,66,lb,ub)
+binary_search(input_array,124,lb,ub)
