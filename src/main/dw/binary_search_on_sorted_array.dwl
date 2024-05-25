@@ -13,8 +13,8 @@ Time complexity = log(n)
 output application/json
 
 var input_array = [12, 28, 66, 76, 91, 105, 124]
-var lb = 0
-var ub = sizeOf(input_array) -1
+var lb = 0 // lower bound
+var ub = sizeOf(input_array) -1 // upper bound
 
 // fun find_mid(l: Number,u: Number) : Number = floor((l+u)/2)
 
