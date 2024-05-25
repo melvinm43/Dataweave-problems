@@ -22,21 +22,18 @@ var find_mid = (l,u) -> floor((l+u)/2)
 
 fun binary_search(array,target,left,right) = 
     if(left > right)
-                "Number not found!!"
-    else 
-        do
-            {
-                var mid = find_mid(left,right) 
+        "Number not found!!"
+    else do {
+            var mid = find_mid(left,right) 
             ---
-                if(array[mid] == target)
+                if (array[mid] == target)
                     mid
                 else if (array[mid] > target)
                     binary_search(array,target,left,mid - 1)  // search in the left half
-                else 
-                    binary_search(array,target,mid + 1,right) // search in the right half
+                else binary_search(array,target,mid + 1,right) // search in the right half
             }
 
 
 ---
 
-binary_search(input_array,22,lb,ub)
+binary_search(input_array,66,lb,ub)
