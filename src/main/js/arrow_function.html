@@ -1,0 +1,42 @@
+<html>
+    <body>
+        <h2>
+            Java Script Arrow Functions
+        </h2>
+        <script>
+            function subtractNumbers1(a,b) {
+                return console.log(a-b);
+            }
+            subtractNumbers1(10,2)
+
+            // 1. Remove the function keyword , we are left with only the function name
+            // 2. Convert the function name to a variable 
+            // 3. If it is a single liner, then get the logic to a single line and 
+            // remove the braces and return statement.
+            let subtractNumbers2 = (a,b) => {
+                return console.log("This is a multi line function")
+                return console.log(a-b);
+            }
+            subtractNumbers2(11,2);
+
+            let subtractNumbers3 = (a,b) =>  console.log(a-b);
+
+            subtractNumbers3(12,2);
+
+            let subtractNumbers4 = (a) =>  console.log(a);
+
+            subtractNumbers4(12);
+
+            // if single paramter remove the paranthese too.
+            let subtractNumbers5 = a =>  console.log(a);
+
+            subtractNumbers5(13);
+
+            // function wih no parameter
+            let printHello = () => console.log("hello")
+
+            printHello();
+
+        </script>
+    </body>
+</html>

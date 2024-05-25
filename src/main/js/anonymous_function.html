@@ -1,0 +1,58 @@
+<html>
+    <body>
+        <h2>
+            Java Script Anonymous Functions
+        </h2>
+        <script>
+            // funtion with no parameters
+            function oldMathAdd() {
+                return console.log(10+20);
+            }
+            oldMathAdd();
+
+            // function with parameters
+            function oldMathWithParameter(a,b) {
+                return console.log(a+b)
+            }
+
+            oldMathWithParameter(10,40);
+
+            // anonymous function
+            let add2Numbers =    function () {
+                return console.log(40+30)
+            }
+
+            add2Numbers();
+
+            // anonymous function with parameters
+            let add2NumbersParameterized =    function (a,b) {
+                return console.log(a+b)
+            }
+
+            add2NumbersParameterized(40,30);
+
+            
+            // calling a function using using an anonymous function
+
+            let userDetails = {
+                firstName: "Melvin",
+                lastName: "Mathew",
+                invokeName (a,b) {
+                    console.log(`This is ${this.firstName}, ${this.lastName}`);
+                    console.log(a+b);
+                }
+            }
+
+            // using anonymous function
+            setTimeout(function() {
+                userDetails.invokeName(10,20)
+            },3000)
+
+            // using anonymous and arrow function
+            setTimeout(() => userDetails.invokeName(10,20),3000)
+
+
+
+        </script>
+    </body>
+</html>
