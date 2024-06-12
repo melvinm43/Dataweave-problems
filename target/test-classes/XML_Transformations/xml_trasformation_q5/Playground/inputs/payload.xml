@@ -1,0 +1,17 @@
+<employees>
+    <employee>
+        <id>101</id>
+        <name>John Doe</name>
+        <department>IT</department>
+    </employee>
+    <employee>
+        <id>102</id>
+        <name>Jane Smith</name>
+        <department>HR</department>
+    </employee>
+    <employee>
+        <id>103</id>
+        <name>Michael Johnson</name>
+        <department>IT</department>
+    </employee>
+</employees>
