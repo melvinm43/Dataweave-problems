@@ -1,0 +1,10 @@
+<employees>
+    <employee>
+        <id>101</id>
+        <name>John Doe</name>
+    </employee>
+        <employee>
+        <id>102</id>
+        <name>Jane Smith</name>
+    </employee>
+</employees>
