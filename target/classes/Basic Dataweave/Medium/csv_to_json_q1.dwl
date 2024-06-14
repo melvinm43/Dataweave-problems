@@ -1,6 +1,7 @@
 %dw 2.0
 output application/json
 /*
+Source: https://www.jerney.io/dataweave-practice-exercises/
 Take the following CSV file:
 invoiceId,vendorName,total,lineItem,lineItemAmount
 1,Amazon,100,Sneakers,75
