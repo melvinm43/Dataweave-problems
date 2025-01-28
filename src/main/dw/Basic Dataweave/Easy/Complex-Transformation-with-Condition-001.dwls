@@ -1,0 +1,21 @@
+%dw 2.0
+output application/json
+var input_rec = [
+  { "id": 1, "status": "active", "value": 100 },
+  { "id": 2, "status": "inactive", "value": 200 },
+  { "id": 3, "status": "active", "value": 300 }
+]
+
+
+/* 
+Expected Output
+{
+  "active": [100, 300],
+  "inactive": [200]
+}
+ */
+---
+input_rec groupBy ((rec) -> rec.status) mapObject ((value, key) -> 
+(key) : value map ((item) -> item.value)
+)
+
